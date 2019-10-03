@@ -97,7 +97,7 @@ function parse (str, options) {
       repeat: repeat,
       pattern: pattern
         ? escapeGroup(pattern)
-        : '[^' + escapeString(delimiter === defaultDelimiter ? delimiter : (delimiter + defaultDelimiter)) + ']+?'
+        : '[^' + escapeString(delimiter === defaultDelimiter ? delimiter : (delimiter + defaultDelimiter)) + ']+'
     })
   }
 
